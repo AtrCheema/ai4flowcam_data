@@ -7,13 +7,13 @@ sphinx_rtd_theme
 sphinx_issues
 sphinx_gallery
 nbsphinx
-git+https://github.com/AtrCheema/AI4Water.git@f9ee2694c707321fc7d480d681bd5715bcc68493
-git+https://github.com/Sara-Iftikhar/easy_mpl.git@efc58616be1e83b11769ec003a400b82c95f4e92
+git+https://github.com/AtrCheema/AI4Water.git@dev
+git+https://github.com/Sara-Iftikhar/easy_mpl.git
 seaborn
 
 
 tensorflow==2.10.1
 tensorflow_probability==0.16.0
 numpy==1.21.6
-ngboost
-shap
+ngboost==0.4.1
+shap==0.41.0
