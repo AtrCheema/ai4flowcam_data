@@ -421,11 +421,10 @@ def set_rcParams(**kwargs):
     plt.rcParams.update({'legend.title_fontsize': '12'})
 
     if sys.platform == "linux":
-
-        _kwargs['font.family'] = 'serif'
-        _kwargs['font.serif'] = ['Times New Roman'] + plt.rcParams['font.serif']
+        kwargs['font.family'] = 'serif'
+        kwargs['font.serif'] = ['Times New Roman'] + plt.rcParams['font.serif']
     else:
-        _kwargs['font.family'] = "Times New Roman"
+        kwargs['font.family'] = "Times New Roman"
 
     for k,v in kwargs.items():
         plt.rcParams[k] = v
