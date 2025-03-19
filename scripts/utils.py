@@ -5,6 +5,7 @@ utils
 This file contains utility functions which are used
 in other files.
 """
+import sys
 import warnings
 from typing import Union, Any, List
 
@@ -418,7 +419,13 @@ def set_rcParams(**kwargs):
     plt.rcParams.update({'ytick.labelsize': '12'})
     plt.rcParams.update({'font.weight': 'bold'})
     plt.rcParams.update({'legend.title_fontsize': '12'})
-    plt.rcParams.update({"font.family": "Times New Roman"})
+
+    if sys.platform == "linux":
+
+        _kwargs['font.family'] = 'serif'
+        _kwargs['font.serif'] = ['Times New Roman'] + plt.rcParams['font.serif']
+    else:
+        _kwargs['font.family'] = "Times New Roman"
 
     for k,v in kwargs.items():
         plt.rcParams[k] = v

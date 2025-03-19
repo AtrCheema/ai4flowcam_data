@@ -3,6 +3,7 @@ results/
 wandb/
 .idea/
 auto_examples/
+gen_modules/
 build/
 manuscript/
 __pycache__/
