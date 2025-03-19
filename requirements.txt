@@ -1,11 +1,11 @@
 
-git+https://github.com/AtrCheema/AI4Water.git@0ee95d1e371a895e19ab4dd8fb9f0a7f5e6508a1
-git+https://github.com/Sara-Iftikhar/easy_mpl.git@14ddf9532ffceb6ff0d63b3670989479e11a7c17
+git+https://github.com/AtrCheema/AI4Water.git@dev
+git+https://github.com/Sara-Iftikhar/easy_mpl.git
 seaborn
 
 tensorflow==2.10.1
 tensorflow_probability==0.16.0
-ngboost
-shap
-hyperopt
-scikit-optimize
+numpy==1.21.6
+ngboost==0.4.1
+shap==0.41.0
+numba==0.57.0
