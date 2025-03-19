@@ -1,0 +1,12 @@
+
+results/
+wandb/
+.idea/
+auto_examples/
+build/
+manuscript/
+__pycache__/
+
+*.csv
+*.png
+*.xlsx
